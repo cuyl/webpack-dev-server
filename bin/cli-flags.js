@@ -7,12 +7,12 @@ module.exports = {
         type: 'string',
         multiple: true,
         description:
-          "Allows to enumerate the hosts from which access to the dev server are allowed (useful when you are proxying dev server, by default is 'auto'). https://webpack.js.org/configuration/dev-server/#devserverallowedhosts",
+          "Allows to enumerate the hosts from which access to the dev server are allowed (useful when you are proxying dev server, by default is 'auto').",
         path: 'allowedHosts[]',
       },
       {
         description:
-          "Allows to enumerate the hosts from which access to the dev server are allowed (useful when you are proxying dev server, by default is 'auto'). https://webpack.js.org/configuration/dev-server/#devserverallowedhosts",
+          "Allows to enumerate the hosts from which access to the dev server are allowed (useful when you are proxying dev server, by default is 'auto').",
         multiple: false,
         path: 'allowedHosts',
         type: 'enum',
@@ -20,7 +20,7 @@ module.exports = {
       },
     ],
     description:
-      "Allows to enumerate the hosts from which access to the dev server are allowed (useful when you are proxying dev server, by default is 'auto'). https://webpack.js.org/configuration/dev-server/#devserverallowedhosts",
+      "Allows to enumerate the hosts from which access to the dev server are allowed (useful when you are proxying dev server, by default is 'auto').",
     multiple: true,
     simpleType: 'string',
   },
@@ -30,12 +30,12 @@ module.exports = {
         type: 'reset',
         multiple: false,
         description:
-          "Clear all items provided in 'allowedHosts' configuration. Allows to enumerate the hosts from which access to the dev server are allowed (useful when you are proxying dev server, by default is 'auto'). https://webpack.js.org/configuration/dev-server/#devserverallowedhosts",
+          "Clear all items provided in 'allowedHosts' configuration. Allows to enumerate the hosts from which access to the dev server are allowed (useful when you are proxying dev server, by default is 'auto').",
         path: 'allowedHosts',
       },
     ],
     description:
-      "Clear all items provided in 'allowedHosts' configuration. Allows to enumerate the hosts from which access to the dev server are allowed (useful when you are proxying dev server, by default is 'auto'). https://webpack.js.org/configuration/dev-server/#devserverallowedhosts",
+      "Clear all items provided in 'allowedHosts' configuration. Allows to enumerate the hosts from which access to the dev server are allowed (useful when you are proxying dev server, by default is 'auto').",
     simpleType: 'boolean',
     multiple: false,
   },
@@ -45,14 +45,14 @@ module.exports = {
         type: 'boolean',
         multiple: false,
         description:
-          'Allows to broadcasts dev server via ZeroConf networking on start. https://webpack.js.org/configuration/dev-server/#devserverbonjour',
+          'Allows to broadcasts dev server via ZeroConf networking on start.',
         path: 'bonjour',
       },
     ],
     description:
-      'Allows to broadcasts dev server via ZeroConf networking on start. https://webpack.js.org/configuration/dev-server/#devserverbonjour',
+      'Allows to broadcasts dev server via ZeroConf networking on start.',
     negatedDescription:
-      'Disallows to broadcasts dev server via ZeroConf networking on start. https://webpack.js.org/configuration/dev-server/#devserverbonjour',
+      'Disallows to broadcasts dev server via ZeroConf networking on start.',
     simpleType: 'boolean',
     multiple: false,
   },
@@ -86,12 +86,11 @@ module.exports = {
         values: ['none', 'error', 'warn', 'info', 'log', 'verbose'],
         multiple: false,
         description:
-          'Allows to specify options for client script in the browser. https://webpack.js.org/configuration/dev-server/#devserverclient',
+          'Allows to specify options for client script in the browser.',
         path: 'client.logging',
       },
     ],
-    description:
-      'Allows to specify options for client script in the browser. https://webpack.js.org/configuration/dev-server/#devserverclient',
+    description: 'Allows to specify options for client script in the browser.',
     simpleType: 'string',
     multiple: false,
   },
@@ -312,19 +311,19 @@ module.exports = {
         values: ['sockjs', 'ws'],
         multiple: false,
         description:
-          "Allows to set web socket server and options (by default 'ws'). https://webpack.js.org/configuration/dev-server/#devserverwebsocketserver",
+          "Allows to set web socket server and options (by default 'ws').",
         path: 'webSocketServer',
       },
       {
         type: 'string',
         multiple: false,
         description:
-          "Allows to set web socket server and options (by default 'ws'). https://webpack.js.org/configuration/dev-server/#devserverwebsocketserver",
+          "Allows to set web socket server and options (by default 'ws').",
         path: 'webSocketServer',
       },
     ],
     description:
-      "Allows to set web socket server and options (by default 'ws'). https://webpack.js.org/configuration/dev-server/#devserverwebsocketserver",
+      "Allows to set web socket server and options (by default 'ws').",
     simpleType: 'string',
     multiple: false,
   },
@@ -333,13 +332,11 @@ module.exports = {
       {
         type: 'boolean',
         multiple: false,
-        description:
-          'Enables gzip compression for everything served. https://webpack.js.org/configuration/dev-server/#devservercompress',
+        description: 'Enables gzip compression for everything served.',
         path: 'compress',
       },
     ],
-    description:
-      'Enables gzip compression for everything served. https://webpack.js.org/configuration/dev-server/#devservercompress',
+    description: 'Enables gzip compression for everything served.',
     negatedDescription: 'Disables gzip compression for everything served.',
     simpleType: 'boolean',
     multiple: false,
@@ -350,12 +347,12 @@ module.exports = {
         type: 'boolean',
         multiple: false,
         description:
-          "Allows to proxy requests through a specified index page (by default 'index.html'), useful for Single Page Applications that utilise the HTML5 History API. https://webpack.js.org/configuration/dev-server/#devserverhistoryapifallback",
+          "Allows to proxy requests through a specified index page (by default 'index.html'), useful for Single Page Applications that utilise the HTML5 History API.",
         path: 'historyApiFallback',
       },
     ],
     description:
-      "Allows to proxy requests through a specified index page (by default 'index.html'), useful for Single Page Applications that utilise the HTML5 History API. https://webpack.js.org/configuration/dev-server/#devserverhistoryapifallback",
+      "Allows to proxy requests through a specified index page (by default 'index.html'), useful for Single Page Applications that utilise the HTML5 History API.",
     simpleType: 'boolean',
     multiple: false,
   },
@@ -364,13 +361,11 @@ module.exports = {
       {
         type: 'string',
         multiple: false,
-        description:
-          'Allows to specify a hostname to use. https://webpack.js.org/configuration/dev-server/#devserverhost',
+        description: 'Allows to specify a hostname to use.',
         path: 'host',
       },
     ],
-    description:
-      'Allows to specify a hostname to use. https://webpack.js.org/configuration/dev-server/#devserverhost',
+    description: 'Allows to specify a hostname to use.',
     simpleType: 'string',
     multiple: false,
   },
@@ -379,21 +374,18 @@ module.exports = {
       {
         type: 'boolean',
         multiple: false,
-        description:
-          'Enables Hot Module Replacement. https://webpack.js.org/configuration/dev-server/#devserverhot',
+        description: 'Enables Hot Module Replacement.',
         path: 'hot',
       },
       {
         type: 'enum',
         values: ['only'],
         multiple: false,
-        description:
-          'Enables Hot Module Replacement. https://webpack.js.org/configuration/dev-server/#devserverhot',
+        description: 'Enables Hot Module Replacement.',
         path: 'hot',
       },
     ],
-    description:
-      'Enables Hot Module Replacement. https://webpack.js.org/configuration/dev-server/#devserverhot',
+    description: 'Enables Hot Module Replacement.',
     negatedDescription: 'Disables Hot Module Replacement.',
     simpleType: 'string',
     multiple: false,
@@ -403,13 +395,11 @@ module.exports = {
       {
         type: 'boolean',
         multiple: false,
-        description:
-          'Allows to serve over HTTP/2 using SPDY. https://webpack.js.org/configuration/dev-server/#devserverhttp2',
+        description: 'Allows to serve over HTTP/2 using SPDY.',
         path: 'http2',
       },
     ],
-    description:
-      'Allows to serve over HTTP/2 using SPDY. https://webpack.js.org/configuration/dev-server/#devserverhttp2',
+    description: 'Allows to serve over HTTP/2 using SPDY.',
     negatedDescription: 'Does not serve over HTTP/2 using SPDY.',
     simpleType: 'boolean',
     multiple: false,
@@ -420,12 +410,12 @@ module.exports = {
         type: 'boolean',
         multiple: false,
         description:
-          "Allows to configure the server's listening socket for TLS (by default, dev server will be served over HTTP). https://webpack.js.org/configuration/dev-server/#devserverhttps",
+          "Allows to configure the server's listening socket for TLS (by default, dev server will be served over HTTP).",
         path: 'https',
       },
     ],
     description:
-      "Allows to configure the server's listening socket for TLS (by default, dev server will be served over HTTP). https://webpack.js.org/configuration/dev-server/#devserverhttps",
+      "Allows to configure the server's listening socket for TLS (by default, dev server will be served over HTTP).",
     negatedDescription:
       "Disallows to configure the server's listening socket for TLS (by default, dev server will be served over HTTP).",
     simpleType: 'boolean',
@@ -515,21 +505,18 @@ module.exports = {
       {
         type: 'string',
         multiple: false,
-        description:
-          'Listen to a unix socket. https://webpack.js.org/configuration/dev-server/#devserveripc',
+        description: 'Listen to a unix socket.',
         path: 'ipc',
       },
       {
         type: 'enum',
         values: [true],
         multiple: false,
-        description:
-          'Listen to a unix socket. https://webpack.js.org/configuration/dev-server/#devserveripc',
+        description: 'Listen to a unix socket.',
         path: 'ipc',
       },
     ],
-    description:
-      'Listen to a unix socket. https://webpack.js.org/configuration/dev-server/#devserveripc',
+    description: 'Listen to a unix socket.',
     simpleType: 'string',
     multiple: false,
   },
@@ -539,12 +526,12 @@ module.exports = {
         type: 'boolean',
         multiple: false,
         description:
-          'Enables reload/refresh the page(s) when file changes are detected (enabled by default). https://webpack.js.org/configuration/dev-server/#devserverlivereload',
+          'Enables reload/refresh the page(s) when file changes are detected (enabled by default).',
         path: 'liveReload',
       },
     ],
     description:
-      'Enables reload/refresh the page(s) when file changes are detected (enabled by default). https://webpack.js.org/configuration/dev-server/#devserverlivereload',
+      'Enables reload/refresh the page(s) when file changes are detected (enabled by default).',
     negatedDescription:
       'Disables reload/refresh the page(s) when file changes are detected (enabled by default)',
     simpleType: 'boolean',
@@ -556,19 +543,19 @@ module.exports = {
         type: 'string',
         multiple: true,
         description:
-          'Allows to configure dev server to open the browser(s) and page(s) after server had been started (set it to true to open your default browser). https://webpack.js.org/configuration/dev-server/#devserveropen',
+          'Allows to configure dev server to open the browser(s) and page(s) after server had been started (set it to true to open your default browser).',
         path: 'open[]',
       },
       {
         type: 'boolean',
         multiple: false,
         description:
-          'Allows to configure dev server to open the browser(s) and page(s) after server had been started (set it to true to open your default browser). https://webpack.js.org/configuration/dev-server/#devserveropen',
+          'Allows to configure dev server to open the browser(s) and page(s) after server had been started (set it to true to open your default browser).',
         path: 'open',
       },
     ],
     description:
-      'Allows to configure dev server to open the browser(s) and page(s) after server had been started (set it to true to open your default browser). https://webpack.js.org/configuration/dev-server/#devserveropen',
+      'Allows to configure dev server to open the browser(s) and page(s) after server had been started (set it to true to open your default browser).',
     negatedDescription: 'Does not open the default browser.',
     simpleType: 'string',
     multiple: true,
@@ -631,12 +618,12 @@ module.exports = {
         type: 'reset',
         multiple: false,
         description:
-          "Clear all items provided in 'open' configuration. Allows to configure dev server to open the browser(s) and page(s) after server had been started (set it to true to open your default browser). https://webpack.js.org/configuration/dev-server/#devserveropen",
+          "Clear all items provided in 'open' configuration. Allows to configure dev server to open the browser(s) and page(s) after server had been started (set it to true to open your default browser).",
         path: 'open',
       },
     ],
     description:
-      "Clear all items provided in 'open' configuration. Allows to configure dev server to open the browser(s) and page(s) after server had been started (set it to true to open your default browser). https://webpack.js.org/configuration/dev-server/#devserveropen",
+      "Clear all items provided in 'open' configuration. Allows to configure dev server to open the browser(s) and page(s) after server had been started (set it to true to open your default browser).",
     simpleType: 'boolean',
     multiple: false,
   },
@@ -675,28 +662,24 @@ module.exports = {
       {
         type: 'number',
         multiple: false,
-        description:
-          'Allows to specify a port to use. https://webpack.js.org/configuration/dev-server/#devserverport',
+        description: 'Allows to specify a port to use.',
         path: 'port',
       },
       {
         type: 'string',
         multiple: false,
-        description:
-          'Allows to specify a port to use. https://webpack.js.org/configuration/dev-server/#devserverport',
+        description: 'Allows to specify a port to use.',
         path: 'port',
       },
       {
         type: 'enum',
         values: ['auto'],
         multiple: false,
-        description:
-          'Allows to specify a port to use. https://webpack.js.org/configuration/dev-server/#devserverport',
+        description: 'Allows to specify a port to use.',
         path: 'port',
       },
     ],
-    description:
-      'Allows to specify a port to use. https://webpack.js.org/configuration/dev-server/#devserverport',
+    description: 'Allows to specify a port to use.',
     simpleType: 'string',
     multiple: false,
   },
@@ -706,19 +689,19 @@ module.exports = {
         type: 'string',
         multiple: true,
         description:
-          "Allows to configure options for serving static files from directory (by default 'public' directory). https://webpack.js.org/configuration/dev-server/#devserverstatic",
+          "Allows to configure options for serving static files from directory (by default 'public' directory).",
         path: 'static[]',
       },
       {
         type: 'boolean',
         multiple: false,
         description:
-          "Allows to configure options for serving static files from directory (by default 'public' directory). https://webpack.js.org/configuration/dev-server/#devserverstatic",
+          "Allows to configure options for serving static files from directory (by default 'public' directory).",
         path: 'static',
       },
     ],
     description:
-      "Allows to configure options for serving static files from directory (by default 'public' directory). https://webpack.js.org/configuration/dev-server/#devserverstatic",
+      "Allows to configure options for serving static files from directory (by default 'public' directory).",
     simpleType: 'string',
     multiple: true,
   },
@@ -793,12 +776,12 @@ module.exports = {
         type: 'reset',
         multiple: false,
         description:
-          "Clear all items provided in 'static' configuration. Allows to configure options for serving static files from directory (by default 'public' directory). https://webpack.js.org/configuration/dev-server/#devserverstatic",
+          "Clear all items provided in 'static' configuration. Allows to configure options for serving static files from directory (by default 'public' directory).",
         path: 'static',
       },
     ],
     description:
-      "Clear all items provided in 'static' configuration. Allows to configure options for serving static files from directory (by default 'public' directory). https://webpack.js.org/configuration/dev-server/#devserverstatic",
+      "Clear all items provided in 'static' configuration. Allows to configure options for serving static files from directory (by default 'public' directory).",
     simpleType: 'boolean',
     multiple: false,
   },
@@ -823,12 +806,12 @@ module.exports = {
         type: 'string',
         multiple: true,
         description:
-          'Allows to configure list of globs/directories/files to watch for file changes. https://webpack.js.org/configuration/dev-server/#devserverwatchfiles',
+          'Allows to configure list of globs/directories/files to watch for file changes.',
         path: 'watchFiles[]',
       },
     ],
     description:
-      'Allows to configure list of globs/directories/files to watch for file changes. https://webpack.js.org/configuration/dev-server/#devserverwatchfiles',
+      'Allows to configure list of globs/directories/files to watch for file changes.',
     simpleType: 'string',
     multiple: true,
   },
@@ -838,12 +821,12 @@ module.exports = {
         type: 'reset',
         multiple: false,
         description:
-          "Clear all items provided in 'watchFiles' configuration. Allows to configure list of globs/directories/files to watch for file changes. https://webpack.js.org/configuration/dev-server/#devserverwatchfiles",
+          "Clear all items provided in 'watchFiles' configuration. Allows to configure list of globs/directories/files to watch for file changes.",
         path: 'watchFiles',
       },
     ],
     description:
-      "Clear all items provided in 'watchFiles' configuration. Allows to configure list of globs/directories/files to watch for file changes. https://webpack.js.org/configuration/dev-server/#devserverwatchfiles",
+      "Clear all items provided in 'watchFiles' configuration. Allows to configure list of globs/directories/files to watch for file changes.",
     simpleType: 'boolean',
     multiple: false,
   },
