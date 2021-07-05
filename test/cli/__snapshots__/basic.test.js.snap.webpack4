@@ -99,7 +99,7 @@ Options:
   --static-directory <value...>             Directory for static contents.
   --static-public-path <value...>           The static files will be available in the browser under this public path.
   --static-serve-index                      Tells dev server to use serveIndex middleware when enabled.
-  --no-static-serve-index                   Negative 'static-serve-index' option.
+  --no-static-serve-index                   Does not tell dev server to use serveIndex middleware.
   --static-watch                            Watches for files in static content directory.
   --no-static-watch                         Does not watch for files in static content directory.
   --static-reset                            Clear all items provided in 'static' configuration. Allows to configure options for serving static files from directory (by default 'public' directory).
