@@ -101,11 +101,12 @@ Options:
   --static-serve-index                      Tells dev server to use serveIndex middleware when enabled.
   --no-static-serve-index                   Negative 'static-serve-index' option.
   --static-watch                            Watches for files in static content directory.
-  --no-static-watch                         Does not watch for files in static content directory.
+  --no-static-watch                         Negative 'static-watch' option.
   --static-reset                            Clear all items provided in 'static' configuration. Allows to configure options for serving static files from directory (by default 'public' directory).
   --static-public-path-reset                Clear all items provided in 'static.publicPath' configuration. The static files will be available in the browser under this public path.
   --watch-files <value...>                  Allows to configure list of globs/directories/files to watch for file changes.
   --watch-files-reset                       Clear all items provided in 'watchFiles' configuration. Allows to configure list of globs/directories/files to watch for file changes.
+  --web-socket-server <value>               Allows to set web socket server and options (by default 'ws').
 
 Global options:
   --color                                   Enable colors on console.
